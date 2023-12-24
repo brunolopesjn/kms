@@ -15,6 +15,8 @@ repositories {
 }
 
 dependencies {
+
+    // Micronaut Framework
     ksp("io.micronaut:micronaut-http-validation:3.9.2")
     ksp("io.micronaut.serde:micronaut-serde-processor:1.5.2")
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime:3.2.2")
@@ -25,6 +27,12 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic:1.4.12")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
     testImplementation("io.micronaut:micronaut-http-client:3.8.7")
+
+    // Micronaut Kotest
+    ksp("io.micronaut:micronaut-inject-java:3.8.7")
+    testImplementation("io.micronaut.test:micronaut-test-kotest:3.9.2")
+    testImplementation("io.mockk:mockk:1.13.4")
+    testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.5")
 
 }
 

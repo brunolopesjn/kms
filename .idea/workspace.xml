@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71862cf7-4a81-4430-b0b3-9d6680b9ab8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/Application.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="71862cf7-4a81-4430-b0b3-9d6680b9ab8a" name="Changes" comment=":wrench: chore: Configurando o Micronaut no projeto">
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,9 +114,20 @@
       <option name="presentableId" value="Default" />
       <updated>1703352449678</updated>
     </task>
+    <task id="LOCAL-00001" summary=":wrench: chore: Configurando o Micronaut no projeto">
+      <option name="closed" value="true" />
+      <created>1703381381255</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703381381255</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value=":wrench: chore: Configurando o Micronaut no projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value=":wrench: chore: Configurando o Micronaut no projeto" />
   </component>
 </project>
