@@ -34,6 +34,13 @@ dependencies {
     testImplementation("io.mockk:mockk:1.13.4")
     testImplementation("io.kotest:kotest-runner-junit5-jvm:5.5.5")
 
+    // Micronaut Data JDBC, Flyway e PostgreSQL
+    ksp("io.micronaut.data:micronaut-data-processor:3.9.6")
+    implementation("io.micronaut.data:micronaut-data-r2dbc:3.9.6")
+    implementation("io.micronaut.flyway:micronaut-flyway:6.2.1")
+    runtimeOnly("org.postgresql:r2dbc-postgresql:1.0.3.RELEASE")
+    runtimeOnly("org.postgresql:postgresql:42.7.1")
+
 }
 
 application {
