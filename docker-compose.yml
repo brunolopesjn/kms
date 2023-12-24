@@ -1,0 +1,18 @@
+services:
+
+  db:
+    image: postgres:16.1-alpine
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: s3cr3t
+      POSTGRES_DB: kms
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
