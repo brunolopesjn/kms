@@ -40,6 +40,7 @@ dependencies {
     implementation("io.micronaut.flyway:micronaut-flyway:6.2.1")
     implementation("io.micronaut.sql:micronaut-jdbc-hikari:5.4.0")
     runtimeOnly("org.postgresql:postgresql:42.7.1")
+    runtimeOnly("com.h2database:h2:2.2.224")
 
 }
 

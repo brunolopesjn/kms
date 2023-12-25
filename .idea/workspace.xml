@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71862cf7-4a81-4430-b0b3-9d6680b9ab8a" name="Changes" comment=":sparkles: feat: Configurado o Micronaut Data JDBC e Flyway sobre o PostgreSQL" />
+    <list default="true" id="71862cf7-4a81-4430-b0b3-9d6680b9ab8a" name="Changes" comment=":wrench: chore: Resolvendo merge">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/common/exceptions/DuplicateRecordException.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/Account.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/AccountController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/AccountRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/AccountService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/Role.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/dto/AccountRequestDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/br/dev/profbrunolopes/domain/account/dto/AccountResponseDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__create-accounts-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/br/dev/profbrunolopes/service/AccountServiceTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/br/dev/profbrunolopes/HelloControllerTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/br/dev/profbrunolopes/controller/HelloControllerTest.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +55,10 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
       </list>
     </option>
   </component>
@@ -64,22 +82,42 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Gradle.AccountServiceTest (1).executor": "Run",
+    "Gradle.AccountServiceTest.executor": "Run",
     "Gradle.Build kms.executor": "Run",
     "Gradle.HelloControllerTest.executor": "Run",
+    "Kotest.AccountServiceTest: Given: Dado o serviço AccountService.executor": "Run",
+    "Kotest.AccountServiceTest: When: Quando o método createAccount for executado com uma instância válida de Account mas com o username já cadastrado.executor": "Run",
     "Kotlin.ApplicationKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bruno/Workspaces/KOTLIN/kms",
+    "last_opened_file_path": "/home/bruno/Workspaces/KOTLIN/kms/src/test/resources",
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="br.dev.profbrunolopes.domain.account" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="br.dev.profbrunolopes.domain.account" />
+      <recent name="br.dev.profbrunolopes.domain.account.service" />
+      <recent name="br.dev.profbrunolopes.domain.account.repository" />
+      <recent name="br.dev.profbrunolopes.domain.account.controller" />
+      <recent name="br.dev.profbrunolopes.domain.account.model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Kotlin.ApplicationKt">
-    <configuration name="HelloControllerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AccountServiceTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -92,7 +130,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;br.dev.profbrunolopes.HelloControllerTest&quot;" />
+            <option value="&quot;br.dev.profbrunolopes.service.AccountServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -110,10 +148,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="AccountServiceTest: Given: Dado o serviço AccountService" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+      <module name="kms.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="br.dev.profbrunolopes.service.AccountServiceTest" />
+      <option name="testPath" value="Dado o serviço AccountService" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest: When: Quando o método createAccount for executado com uma instância válida de Account mas com o username já cadastrado" type="ioKotest" factoryName="Kotest" temporary="true" defaultName="singleModule">
+      <module name="kms.test" />
+      <option name="jrePath" value="" />
+      <option name="jrePathEnabled" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" value="$MODULE_WORKING_DIR$" />
+      <option name="programParameters" value="" />
+      <option name="specName" value="br.dev.profbrunolopes.service.AccountServiceTest" />
+      <option name="testPath" value="Dado o serviço AccountService -- Quando o método createAccount for executado com uma instância válida de Account mas com o username já cadastrado" />
+      <option name="packageName" value="" />
+      <option name="vmparams" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Kotlin.ApplicationKt" />
-        <item itemvalue="Gradle.HelloControllerTest" />
+        <item itemvalue="Kotest.AccountServiceTest: Given: Dado o serviço AccountService" />
+        <item itemvalue="Gradle.AccountServiceTest (1)" />
+        <item itemvalue="Kotest.AccountServiceTest: When: Quando o método createAccount for executado com uma instância válida de Account mas com o username já cadastrado" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703408812138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":wrench: chore: Resolvendo merge">
+      <option name="closed" value="true" />
+      <created>1703408885380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703408885380</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -158,6 +249,7 @@
     <MESSAGE value=":wrench: chore: Configurando o Micronaut no projeto" />
     <MESSAGE value=":wrench: chore: Configurando o Micronaut Kotest no projeto" />
     <MESSAGE value=":sparkles: feat: Configurado o Micronaut Data JDBC e Flyway sobre o PostgreSQL" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: feat: Configurado o Micronaut Data JDBC e Flyway sobre o PostgreSQL" />
+    <MESSAGE value=":wrench: chore: Resolvendo merge" />
+    <option name="LAST_COMMIT_MESSAGE" value=":wrench: chore: Resolvendo merge" />
   </component>
 </project>
