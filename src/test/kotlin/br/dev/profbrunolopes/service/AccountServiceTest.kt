@@ -3,6 +3,7 @@ package br.dev.profbrunolopes.service
 import br.dev.profbrunolopes.common.exceptions.DuplicateRecordException
 import br.dev.profbrunolopes.domain.account.Account
 import br.dev.profbrunolopes.domain.account.AccountService
+import br.dev.profbrunolopes.domain.account.Role
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.longs.shouldBeGreaterThanOrEqual
